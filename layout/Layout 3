@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Layout 3</title>
+  </head>
+
+  <style media="screen">
+
+  .title{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 50px;
+    left: 200px;
+
+  }
+
+  .body{
+    padding:10px;
+    margin-top:50vh;
+    margin: 200px;
+    position: absolute;
+    font-size: 50px;
+    font-family: sans-serif;
+  }
+
+
+  </style>
+
+  <body>
+
+    <div class="title"><h3>If It Doesn't Exist on the Internet, It Doesn't Exist</h3></div>
+
+    <div class="body">And because the original materials that UbuWeb hosts never really made money in the first place -- coupled with the fact that as sound, video and textual works, they easily translate to the web environment -- we can indulge in such high-minded utopian ideals. Certainly the latest bestseller or how-to book cannot engage in such radical distribution: the financial stakes are too high. But we are in a unique position -- I'd call it a privileged position -- to be able to give our work away, ensuring that it exists. When was the last time you received a fat royalty check for an academic book? You get my point. And with the advent and subsequent growth of the web, we have our perfect distribution mechanism.</div>
+
+
+
+
+
+  </body>
+</html>

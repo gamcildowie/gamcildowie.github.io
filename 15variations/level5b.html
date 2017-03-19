@@ -25,17 +25,31 @@
 		color: #E54D25;
 		z-index: 3;
 		transform: rotate(45deg);
-	}
+		transform: skewX(20deg);
 
+	}
 	.main2{
 		top: 0px;
+		position: sticky;
 		display: inline-block;
-		position: fixed;
-		margin-top: 52px;
-		margin-left: 52px;
-		color: #EE8522;
-		z-index: 4;
+		margin-top: 50px;
+		margin-left: 50px;
+		z-index: 2;
 		transform: rotate(45deg);
+		transform: skewX(20deg);
+
+	}
+
+
+	.highlight{
+		margin-top: 20px;
+		margin-left: 1px;
+		z-index: 2;
+		display: inline-block;
+		top: 0px;
+		position: relative;
+		color: #EE8522;
+
 	}
 	.highlight{
 		margin-top: 20px;
@@ -49,7 +63,7 @@
 	}
 
 	body{
-		z-index: 1;
+		z-index: 0;
 		background-image: linear-gradient( #EE8522, #E54D25);
 		color: black;
 }
@@ -91,6 +105,8 @@
 			<p>AS LITTLE DESIGN AS POSSIBLE</p>
 
 		</div>
+
+		<br>
 
 
 

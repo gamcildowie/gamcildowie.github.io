@@ -37,12 +37,14 @@ body{
     -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: title;
     animation-duration: 7s;
-    animation-iteration-count: 4;
+    animation-iteration-count: infinite;
     animation-play-state: running;
 }
   @keyframes title {
-    from {transform: skewX(60deg); color: #ff7bac;}
-    to {transform: skewX(-60deg);color: #3fa9f5;}
+    0% {transform: skewX(70deg); color: #3fa9f5;}
+    50% {transform: skewX(-70deg); color: #ff7bac;}
+    100% {transform: skewX(70deg); color: #3fa9f5;}
+
 }
 
 .title:hover{

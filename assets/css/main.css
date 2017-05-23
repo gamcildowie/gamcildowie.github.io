@@ -50,8 +50,8 @@ h4{
   font-size: 20px;
   letter-spacing: 1.25px;
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .nav{
@@ -158,8 +158,8 @@ h4{
 }
 
 .make{
-  background-color: #00FF01;
-  color: #267F27;
+  background-image: image("assets/images/buzz.jpg");
+  color: #00FF01;
   display: inline-block;
   width: 99%;
   height: 98%;

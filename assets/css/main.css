@@ -66,6 +66,21 @@ h4{
   text-align: center;
 }
 
+.text1link:hover{
+  color: #0000fe
+}
+
+.text2link:hover{
+  color: #fe0000
+}
+
+.text3link:hover{
+  color: #FF8041;
+}
+
+.sitetitle:hover{
+  color: #FF00FE;
+}
 
 .item1{
   flex: 1 1 33.333%;
@@ -134,6 +149,28 @@ h4{
   width: 99%;
   height: 98%;
 }
+
+.make{
+  background-color: #00FF01;
+  color: #267F27;
+  display: inline-block;
+  width: 99%;
+  height: 98%;
+}
+
+.makelink{
+  font-family: impact;
+  letter-spacing: 1px;
+  font-size: 40px;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.makelink:hover{
+  color: #00FF01;
+}
+
+
+
 
 .title{
   font-family: impact;

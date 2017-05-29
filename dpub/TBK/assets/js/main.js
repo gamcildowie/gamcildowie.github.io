@@ -32,6 +32,34 @@ $(document).ready(function() {
   } );
 
 
+
+
+  $(document).ready(function(e) {
+      var menuTop1pos = $('#menutop1').offset().top;
+
+      var stickToTop = function(){
+          var winScrollTop = $(window).scrollTop();
+
+          if (winScrollTop >= menuTop1pos) {
+                  $('.title').addClass('stickTop1st');
+          } else {
+                  $('#menutop1').removeClass('stickTop1st');
+          }
+      };
+
+      stickToTop();
+
+      $(window).scroll(function() {
+              stickToTop();
+      });
+  });
+
+
+
+
+
+
+
   $('.blue').click(function() {
  $('.blue').toggleClass('showme');
 });
@@ -63,6 +91,7 @@ $('.intro').toggleClass('showme');
 $('.maybe').click(function() {
 $('.maybe').toggleClass('showme');
 });
+
 
 
 });

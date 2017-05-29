@@ -19,9 +19,15 @@ a:hover{
 }
 
 img{
-
 padding: 10px;
+}
 
+iframe{
+  padding: 10px;
+}
+
+.legs{
+  margin-top: 268px;
 }
 
 h4{
@@ -218,7 +224,8 @@ h5{
   position: absolute;
   width: 200px;
   top: 270px;
-  margin-left: 19.5%;
+  margin-left: 250px;
+  margin-top: 270px;
 }
 
 

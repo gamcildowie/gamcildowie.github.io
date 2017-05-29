@@ -176,7 +176,7 @@ body{
   z-index: 4;
 }
 
-span{
+.blu{
   color: #3fa9f5;
   font-weight: bold;
   text-transform: uppercase;
@@ -252,16 +252,40 @@ transition: 3s;
 color: white;
 }
 
+.spin{
+  transform: rotate(360deg);
 
+}
+
+em{
+  display: inline-block;
+  animation-name: magic;
+  -webkit-animation-name: magic; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: magic;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    transform-origin: center;
+    animation-play-state:running;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+  @keyframes magic {
+    0% {transform:rotate(20deg); }
+    50% {transform:rotate(-20deg); }
+    100% {transform:rotate(20deg); }
+  }
 
 .text{
   color: black;
   position: absolute;
   opacity: 0.7;
-  font-family: helvetica;
+  font-family: 'Nova Script', cursive;
   letter-spacing: 0.5px;
+  line-height: 2;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   margin-left: 50px;
   margin-right: 50px;
   top: 2500px;
@@ -269,11 +293,12 @@ color: white;
 .ryan{
   color: #3fa9f5;
   letter-spacing: 1px;
-  font-size: 75px;
+  font-size: 45px;
 }
 .avery{
   color: #ff7bac;
   text-align: right;
+  margin-left: 200px;
   letter-spacing: 1px;
-  font-size: 75px;
+  font-size: 45px;
 }

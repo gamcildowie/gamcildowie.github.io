@@ -84,14 +84,7 @@ $('.pink').click(function() {
 $('.right').toggleClass('click');
 });
 
-$('.intro').click(function() {
-$('.intro').toggleClass('showme');
-});
-
-$('.maybe').click(function() {
-$('.maybe').toggleClass('showme');
-});
-
+$
 
 
 });

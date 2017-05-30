@@ -19,6 +19,21 @@ body{
     text-transform: uppercase;
   }
 
+
+.info{
+top: 10px;
+left: 10px;
+position: fixed;
+z-index: 1;
+font-family: 'Nova Script', cursive;
+font-weight: bold;
+color: grey;
+}
+
+.info.showme{
+
+}
+
 .title{
   width: 50%;
   height: 50px;
@@ -199,7 +214,7 @@ body{
   color: #3fa9f5;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 20px;
+  border-radius: 2px;
   position: absolute;
   width: 300px;
   font-family: 'Nova Script', cursive;
@@ -208,6 +223,8 @@ body{
   text-align: left;
   margin-left: 240px;
   margin-right: 2000px;
+  background-color: white;
+  cursor:   col-resize;
   top: 1670px;
   transition: 3s;
   z-index: 9;
@@ -220,8 +237,10 @@ transition: 3s;
 color: white;
 -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+background-color: #3fa9f5;
 
 }
+
 
 
 .man{
@@ -239,16 +258,22 @@ clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 
 .intro{
   color: #ff7bac;
+  padding-left: 5px;
+  padding-right: 20px;
+  border-radius: 2px;
   position: absolute;
   font-family: 'Nova Script', cursive;
   font-size: 15px;
   line-height: 1.3;
   letter-spacing: .3px;
-  left: 470px;
-  width: 300px;
+  left: 490px;
+  width: 410px;
+  padding-right: 20px;
+  cursor:   col-resize;
   text-align: right;
   margin-left: 320px;
   margin-right: 200px;
+  background-color: white;
   top: 1830px;
   transition: 5s;
   z-index: 10;
@@ -259,8 +284,12 @@ clip-path: polygon(23% 0, 36% 0, 30% 100%, 15% 100%);
 .intro:hover{
 transition: 4s;
 color: white;
--webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+-webkit-clip-path: polygon(0 100, 500% 0, 200% 100%, 0 100%);
+clip-path: polygon(0 0, 200% 0, 500% 200%, 0 200%);
+background-color: #ff7bac;
+}
+
+
 }
 
 .spin{
@@ -272,9 +301,9 @@ em{
   display: inline-block;
   animation-name: magic;
   -webkit-animation-name: magic; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: .1s; /* Safari 4.0 - 8.0 */
     animation-name: magic;
-    animation-duration: 4s;
+    animation-duration: .1s;
     animation-iteration-count:infinite;
     transform-origin: center;
     animation-play-state:running;
@@ -283,44 +312,39 @@ em{
 }
 
   @keyframes magic {
-    0% {transform:rotate(20deg); }
-    50% {transform:rotate(-20deg); }
-    100% {transform:rotate(20deg); }
+    0% {transform:translateX(.1em); }
+    50% {transform:translateX(-0.1em); }
+    100% {transform:translateX(.1em); }
   }
 
-  .box{
-    width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
-    height: 2px;
-    display: inline-block;
-    border-radius: 20px;
-    background-color: white;
 
-  }
 
 .text{
   color: black;
+  width: 90%;
   position: absolute;
   opacity: 0.7;
   font-family: 'Nova Script', cursive;
+  background-color: white;
   letter-spacing: 0.5px;
   line-height: 3;
   font-size: 20px;
   text-align: left;
   margin-left: 50px;
   margin-right: 50px;
-  top: 2050px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  top: 2150px;
 }
 .ryan{
   color: #3fa9f5;
   letter-spacing: 1px;
-  font-size: 45px;
+  font-size: 20px;
 }
 .avery{
   color: #ff7bac;
   text-align: right;
-  margin-left: 200px;
   letter-spacing: 1px;
-  font-size: 45px;
+  font-size: 20px;
 }

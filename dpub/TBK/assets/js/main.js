@@ -102,7 +102,15 @@ $('.pink').click(function() {
 $('.right').toggleClass('click');
 });
 
-$('.hair').hover(function() {
+$('.maybe').click(function() {
+$('.maybe').toggleClass('showme');
+});
+
+$('.intro').click(function() {
+$('.intro').toggleClass('showme');
+});
+
+$('.hair').click(function() {
 $('.trace').toggleClass('showme');
 });
 

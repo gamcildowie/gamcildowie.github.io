@@ -76,7 +76,8 @@ opacity: 0.5;
   top: 110px;
   left: 65px;
   width: 250px;
-  font-family: 'Nova Script', cursive;
+  height: 200px;
+  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   position: fixed;
   display: none;
@@ -85,8 +86,8 @@ opacity: 0.5;
   border-radius: 00px 10px 10px 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .mation.showme{
@@ -311,7 +312,14 @@ color: white;
 -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 background-color: #3fa9f5;
+}
 
+.maybe.showme{
+transition: 3s;
+color: white;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+background-color: #3fa9f5;
 }
 
 
@@ -364,6 +372,14 @@ clip-path: polygon(0 0, 200% 0, 500% 200%, 0 200%);
 background-color: #ff7bac;
 }
 
+.intro.showme{
+transition: 4s;
+color: white;
+-webkit-clip-path: polygon(0 100, 500% 0, 200% 100%, 0 100%);
+clip-path: polygon(0 0, 200% 0, 500% 200%, 0 200%);
+background-color: #ff7bac;
+}
+
 
 }
 
@@ -376,20 +392,23 @@ em{
   display: inline-block;
   animation-name: magic;
   -webkit-animation-name: magic; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: .1s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
     animation-name: magic;
-    animation-duration: .1s;
+    animation-duration: 3s;
     animation-iteration-count:infinite;
     transform-origin: center;
     animation-play-state:running;
-    animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+
+
 }
 
+
+
   @keyframes magic {
-    0% {transform:translateX(.1em); }
-    50% {transform:translateX(-0.1em); }
-    100% {transform:translateX(.1em); }
+    0% {transform:translateX(-2px); opacity: 1;}
+    50% {transform:translateX(1px); opacity: 0}
+    100% {transform:translateX(-2px); opacity: 1}
   }
 
 
@@ -398,15 +417,18 @@ em{
     margin-left: 55.5%;
     position: absolute;
     z-index: 4;
-    opacity: 0.01;
+    opacity: 0.08;
     transition: 5s;
     pointer-events: none;
   }
 
+  .trace:hover{
+    transition: 5s;
+    opacity: 1.0;
+  }
+
   .trace.showme{
     transition: 5s;
-    pointer-events: none;
-    animation-direction: reverse;
     opacity: 1.0;
   }
 
@@ -416,6 +438,7 @@ em{
     position: absolute;
     z-index: 3;
     opacity: .8;
+    cursor:  cell;
   }
 
 p, h1{
@@ -434,11 +457,10 @@ p, h1{
   font-size: 1.2rem;
   text-align: left;
   margin-left: 65px;
-  margin-right: 65px;
-  padding-top: 80px;
+  padding-top: 65px;
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 154px;
+  padding-bottom: 65px;
   top: 2150px;
   z-index: 1;
 }
@@ -451,40 +473,43 @@ p, h1{
 }
 
 @keyframes opening {
-  0% { letter-spacing: 0px; }
-  50% {letter-spacing: 2px; }
-  100% {letter-spacing: 0px; }
+  0% { letter-spacing: -1px; }
+  50% {letter-spacing: 1.5px; }
+  100% {letter-spacing: -1px; }
 }
 
+
 .noir{
-  width: 39%;
-  margin-left: 50.5%;
+  width: 34%;
+  margin-left: 60%;
+  padding-top: 65px;
   position: absolute;
-  transition: 3s;
+  transition: 5s;
   cursor: pointer;
   opacity: 0.8;
-  margin-bottom: 100px;
 }
+
 
 
 .noir-blue{
-  width: 39%;
-  margin-left: 50.5%;
+  width: 34%;
+  margin-left: 60%;
   position: absolute;
   display: none;
-  transition: 2s;
+  transition: 5s;
 }
 .noir-blue.showme{
   opacity: 0.5;
   display: block;
 }
 
+
 .noir-pink{
-  width: 39%;
-  margin-left: 50.5%;
+  width: 34%;
+  margin-left: 60%;
   position: absolute;
   display: none;
-  transition: 1s;
+  transition: 5s;
   cursor: n-resize;
 }
 .noir-pink.showme{

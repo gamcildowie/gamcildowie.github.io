@@ -32,6 +32,7 @@ $(document).ready(function() {
   } );
 
 
+  //////////
 
 
   $(document).ready(function(e) {
@@ -54,9 +55,26 @@ $(document).ready(function() {
       });
   });
 
+    //////////
+
+
+  $(window).scroll(function(){
+  var wintop = $(window).scrollTop(), docheight =
+
+      $(document).height(), winheight = $(window).height();
+   			var scrolled = (wintop/(docheight-winheight))*100;
+
+    		$('.scroll-line').css('width', (scrolled + '%'));
+  });
 
 
 
+    ////////////
+
+
+  $('.info').click(function() {
+  $('.mation').toggle('showme');
+  });
 
 
 
@@ -82,6 +100,20 @@ $('.pink').toggleClass('showme');
 
 $('.pink').click(function() {
 $('.right').toggleClass('click');
+});
+
+$('.hair').hover(function() {
+$('.trace').toggleClass('showme');
+});
+
+
+$('.noir').click(function() {
+$('.noir-pink').toggleClass('showme');
+});
+
+
+$('.noir-pink').click(function() {
+$('.noir-blue').toggleClass('showme');
 });
 
 $

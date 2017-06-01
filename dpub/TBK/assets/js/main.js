@@ -110,8 +110,25 @@ $('.intro').click(function() {
 $('.intro').toggleClass('showme');
 });
 
+
+$('.show').hover(function() {
+$('.hide').addClass('showme');
+});
+
+
+$('.hair').click(function() {
+$('.hideus').toggleClass('showme');
+});
+
+
+
 $('.hair').click(function() {
 $('.trace').toggleClass('showme');
+});
+
+
+$('.noir').hover(function() {
+$('.shade').addClass('showme');
 });
 
 

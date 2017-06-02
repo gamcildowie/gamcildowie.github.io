@@ -391,12 +391,13 @@ em{
   display: inline-block;
   animation-name: magic;
   -webkit-animation-name: magic; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 8s; /* Safari 4.0 - 8.0 */
     animation-name: magic;
-    animation-duration: 3s;
+    animation-duration: 8s;
     animation-iteration-count:infinite;
     transform-origin: center;
-    animation-play-state:running;
+    animation-play-state: running;
+    animation-direction: reverse;
     animation-timing-function: ease-in-out;
 
 
@@ -405,9 +406,19 @@ em{
 
 
   @keyframes magic {
-    0% {transform:translateX(-2px); opacity: 1;}
-    50% {transform:translateX(1px); opacity: 0}
-    100% {transform:translateX(-2px); opacity: 1}
+    0%  {color:red; }
+    8.33% {color:orange; }
+    16.66% {color:yellow; }
+    24.99% {color:green; }
+    32.32% {color:blue; }
+    41.65% {color:indigo;}
+    49.98% {color:violet; }
+    58.31% {color:indigo; }
+    66.64% {color:blue; }
+    74.97% {color:green; }
+    83.3% {color:yellow; }
+    91.63% {color:orange;}
+    100% {color:red; }
   }
 
 
@@ -437,7 +448,7 @@ em{
     position: absolute;
     z-index: 3;
     opacity: .8;
-    cursor:  cell;
+    cursor:  pointer;
   }
 
 p, h1{
@@ -445,16 +456,33 @@ p, h1{
 
 }
 
-h1{
+h2{
   font-family: 'Nova Script', cursive;
-  font-size: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  margin-top: -120px;
+  margin-bottom: 50px;
+}
+
+.ryan{
+  font-family: 'Nova Cut', cursive;
   font-weight: bold;
 }
 
+.avery{
+  font-family: 'Nova Script', cursive;
+  font-weight: bold;
+}
 
 .text{
-  width: 90%;
+  width: 100%;
   background-color: rgba(157, 124, 212, .5);
+  border-bottom: 100px solid;
+  border-top: 100px solid ;
+  border-left: 50px solid;
+  border-right: 50px solid;
+  border-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   color: black;
@@ -462,7 +490,6 @@ h1{
   line-height: .9;
   font-size: 1.2rem;
   text-align: left;
-  margin-left: 65px;
   padding-top: 65px;
   padding-left: 100px;
   padding-right: 100px;
@@ -509,12 +536,12 @@ h1{
 }
 
 .show{
-  cursor: crosshair;
+  cursor: wait;
 
 }
 
 .hide{
-  opacity: 0;
+  opacity: 0.04;
   transition: 8s;
 }
 
@@ -524,7 +551,7 @@ h1{
 }
 
 .hideus{
-  opacity: 0;
+  opacity: 0.04;
   transition: 8s;
 }
 
@@ -568,4 +595,34 @@ h1{
 .noir-pink.showme{
   opacity: 0.5;
   display: block;
+}
+
+.endquote{
+  font-family:'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 123, 172, 1);
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  border-left: 50px solid rgba(63, 169, 245, 1);
+  border-right: 50px solid rgba(255, 123, 172, 1);
+  top: 3360px;
+  margin-top: 120px;
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  position: absolute;
+  z-index: 1;
+  transition: 2s;
+  background-blend-mode: multiply;
+}
+
+.endquote:hover{
+  background-color: rgba(63, 169, 245, 1);
+  color: white;
+  transition: 4s;
+  transition-timing-function: ease-in-out;
 }

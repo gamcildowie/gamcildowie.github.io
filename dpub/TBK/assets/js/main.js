@@ -141,7 +141,7 @@ $('.noir-pink').click(function() {
 $('.noir-blue').toggleClass('showme');
 });
 
-$
+
 
 
 });

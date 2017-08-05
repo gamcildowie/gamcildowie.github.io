@@ -5,6 +5,19 @@
   box-sizing: border-box;
 }
 
+img{
+  max-height: 650px;
+max-width: 450px;
+width: 420px;
+height: 600px;
+margin-top: -200px;
+margin-left: 0px;
+}
+
+.text{
+  margin-left: 500px;
+}
+
 .poster{
   height: 97vh;
   width: 420px;

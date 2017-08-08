@@ -5,13 +5,34 @@
   box-sizing: border-box;
 }
 
-img{
+
+
+.example1{
   max-height: 650px;
 max-width: 450px;
 width: 420px;
-height: 600px;
-margin-top: -200px;
-margin-left: 0px;
+height: 593px;
+  position: absolute;
+  margin-left: 425px;
+  top: 8px;
+}
+
+.example2{
+
+width: 625px;
+height: 375px;
+  position: absolute;
+  margin-left: 640px;
+  top: 8px;
+}
+
+.example3{
+
+width: 375px;
+height: 375px;
+  position: absolute;
+  margin-left: 540px;
+  top: 8px;
 }
 
 .text{
@@ -27,9 +48,19 @@ h2{
   font-family: sans-serif;
 }
 
+h5{
+  font-family: sans-serif;
+  text-shadow: 0 0 5px #fff;
+}
+
+h1{
+  font-size: 270px;
+  font-weight: bold;
+}
+
 .brah{
   color: #c04f3f;
-  margin-top: 136px;
+  margin-top: 126px;
   margin-left: -5px;
   font-size: 65px;
   letter-spacing: -2px;
@@ -57,7 +88,7 @@ letter-spacing: -2px;
   width: 100%;
   height: 33.3%;
   background-color: #c04f3f;
-  margin-top: -4px;
+  margin-top: -10px;
 }
 
 .requ{
@@ -77,6 +108,60 @@ letter-spacing: -2px;
   margin-top: -4px;
 }
 
+.light{
+  width: 625px;
+  position: fixed;
+  font-size: 140px;
+  text-align: center;
+  letter-spacing: 35px;
+  margin-left: 5px;
+  color: white;
+  opacity: .7;
+  animation: neon .00000000000001s infinite;
+}
+
+@keyframes neon {
+
+
+  0% {
+    text-shadow: 0 0 0px #fff;
+  }
+  50% {
+    text-shadow: 0 0 100px #fff;
+  }
+  100% {
+    text-shadow: 0 0 0px #fff;
+  }
+
+}
+
+.years{
+  width: 625px;
+  position: fixed;
+  font-size: 140px;
+  text-align: center;
+  letter-spacing: 20px;
+  margin-left: 0px;
+  color: white;
+  opacity: .7;
+  animation: neon 3s infinite;
+}
+
+.bg{
+  position: fixed;
+  width: 625px;
+  height: 375px;
+  background-color: black;
+}
+
+.sub{
+  color: white;
+  opacity: 0.8;
+  font-size: 6.5px;
+  margin-left: 11px;
+  margin-top: 356px;
+}
+
 p{
   width: 220px;
   margin-left: 210px;
@@ -88,4 +173,53 @@ p{
   color: #fff;
   font-family: sans-serif;
   font-size: 11px;
+}
+
+.high{
+  position: fixed;
+  margin-top: -10px;
+  margin-left: 15px;
+  font-family: futura;
+  color: #f3040a;
+
+}
+
+.low9{
+  transition: 1s;
+  transform-origin: top;
+  transform: rotate(-180deg);
+  top: 134px;
+  margin-left: 15px;
+  position: fixed;
+  font-family: futura;
+  color: #f3040a;
+}
+
+.low8{
+  transition: 1s;
+  transform-origin: top;
+  transform: rotate(180deg);
+  top: 134px;
+  margin-left: 182px;
+  position: fixed;
+  font-family: futura;
+  color: #f3040a;
+}
+
+.addwhite{
+  color: white
+}
+
+.spin{
+transform: rotate(0deg);
+transition: 1s;
+}
+
+.redsquare{
+  transition: all 1s;
+  display: inline-block;
+  position: fixed;
+  background-color: #f3040a;
+  width: 375px;
+  height: 375px;
 }

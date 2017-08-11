@@ -5,30 +5,67 @@
   box-sizing: border-box;
 }
 
-.nav {
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.navigation{
   position: fixed;
-  top: 10px;
-  left: 30px;
+  display: block;
+  max-height: 70px;
+  text-decoration: none;
+  color: white;
+  width: 100vw;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  color: white;
+  padding-left: 30px;
+}
+
+.back{
+
+}
+
+.tag{
+  text-decoration: underline;
+  color: black;
+  text-shadow: 2px 1px grey;
+
+}
+.tag:hover{
+  transition: 2s;
+  text-decoration: underline;
+  text-shadow: 0px 0px grey;
+
+}
+
+.header {
+  position: fixed;
+  top: 60px;
+  left: 1vw;
+  background-color: skyblue;
+  padding: 10px;
   z-index: 2;
   cursor: pointer;
 }
 
 
 .menu {
-  height: 55vh;
+  height: 53vh;
   width: 15vw;
   background-color: skyblue;
   position: fixed;
-  left: 2vw;
-  top: 60px;
+  left: -20vw;
+  top: 130px;
   z-index: 1;
   transition: all 2s;
   text-align: center;
 }
 
 .menu.showme {
-  margin-left: 20px;
-  background-color: red;
+  left: 1vw;
   transition: all 2s;
 }
 
@@ -98,6 +135,11 @@ h3{
   font-size: 90px;
   font-family: 'Ultra', serif;
   transform: scaleY(500px);
+}
+
+h4 {
+  right: 0px;
+  text-align: right;
 }
 
 .brah{
@@ -221,40 +263,42 @@ p{
   position: fixed;
   margin-top: -10px;
   margin-left: 15px;
-  font-family: futura;
+  font-family: sans-serif;
   color: #f3040a;
 
 }
 
 .low9{
   transition: 1s;
-  transform-origin: top;
+  transform-origin: bottom;
   transform: rotate(-180deg);
-  top: 134px;
+  top: -488px;
   margin-left: 15px;
   position: fixed;
-  font-family: futura;
-  color: white;
+  font-family: sans-serif;
+  color: #fff;
 }
 
 .low8{
   transition: 1s;
   transform-origin: top;
-  transform: rotate(180deg);
-  top: 134px;
-  margin-left: 182px;
+  transform: rotate(-180deg);
+  top: 125px;
+  margin-left: 164px;
   position: fixed;
-  font-family: futura;
-  color: white;
+  font-family: sans-serif;
+  color: #f3040a;
 }
 
 .addwhite{
-  color: white
+  color: white;
 }
 
 .spin{
-transform: rotate(0deg);
-transition: 1s;
+transform: rotate(180deg);
+transition: 2s;
+color: white;
+margin-top: 257px;
 }
 
 .redsquare{

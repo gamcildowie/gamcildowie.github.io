@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  $('.nav').click(function() {
+  $('.header').click(function() {
     $('.menu').toggleClass('showme');
   });
 
@@ -8,11 +8,11 @@ $(document).ready(function() {
 
 
   setTimeout(function () {
-       $('.redsquare' '.low9' 'low8' 'high').addClass('addwhite');
+       $('.redsquare, .low9,.low8, .high').addClass('addwhite');
      }, 1000);
 
      setTimeout(function () {
-       $('.redsquare''.low').addClass('spin');
+       $('.low9,.low8').addClass('spin');
      }, 3000);
 
 

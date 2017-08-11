@@ -35,8 +35,18 @@ height: 375px;
   top: 8px;
 }
 
+.example4{
+
+width: 450px;
+height: 575px;
+  position: fixed;
+  margin-left: 460px;
+}
+
+
 .text{
-  margin-left: 500px;
+  margin-left: 50px;
+  margin-top: 50px;
 }
 
 .poster{
@@ -56,6 +66,12 @@ h5{
 h1{
   font-size: 270px;
   font-weight: bold;
+}
+
+h3{
+  font-size: 90px;
+  font-family: 'Ultra', serif;
+  transform: scaleY(500px);
 }
 
 .brah{
@@ -222,4 +238,24 @@ transition: 1s;
   background-color: #f3040a;
   width: 375px;
   height: 375px;
+}
+
+.halftone{
+  transition: all 1s;
+  display: inline-block;
+  position: fixed;
+  background-color: grey;
+  width: 450px;
+  height: 558px;
+  margin-top: 8px;
+}
+
+.flash{
+  font-size: 90px;
+  font-family: 'Ultra', serif;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
 }

@@ -27,7 +27,7 @@
 }
 
 .menu.showme {
-  left: 0vw;
+  margin-left: 20px;
   background-color: red;
   transition: all 2s;
 }
@@ -234,7 +234,7 @@ p{
   margin-left: 15px;
   position: fixed;
   font-family: futura;
-  color: #f3040a;
+  color: white;
 }
 
 .low8{
@@ -245,7 +245,7 @@ p{
   margin-left: 182px;
   position: fixed;
   font-family: futura;
-  color: #f3040a;
+  color: white;
 }
 
 .addwhite{

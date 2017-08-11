@@ -5,6 +5,32 @@
   box-sizing: border-box;
 }
 
+.nav {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.menu {
+  height: 55vh;
+  width: 15vw;
+  background-color: skyblue;
+  position: fixed;
+  left: 2vw;
+  top: 60px;
+  z-index: 1;
+  transition: all 2s;
+  text-align: center;
+}
+
+.menu.showme {
+  left: 0vw;
+  background-color: red;
+  transition: all 2s;
+}
 
 
 .example1{

@@ -10,22 +10,90 @@ a{
   color: white;
 }
 
+.background{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a9261e;
+  z-index: 0;
+}
+
+.head{
+  width: 13%;
+  position: fixed;
+  margin-left: 940px;
+  margin-top: 230px;
+}
+.r-arm{
+  width: 28%;
+  position: fixed;
+  margin-left: 568px;
+  margin-top: 58px;
+  z-index: 1;
+}
+.l-arm{
+  width: 26%;
+  position: fixed;
+  margin-left: 568px;
+  margin-top: 395px;
+}
+.body{
+  width: 22.5%;
+  position: fixed;
+  margin-left: 644px;
+  margin-top: 180px;
+}
+.l-leg{
+  width: 34.5%;
+  position: fixed;
+  margin-left: 188px;
+  margin-top: 292px;
+}
+.r-leg{
+  width: 35%;
+  position: fixed;
+  margin-left: 168px;
+  margin-top: 95px;
+}
+
+.container{
+  display: inline-block;
+  position: relative;
+  width: 75%;
+}
+
+
 .navigation{
   position: fixed;
   display: block;
   max-height: 70px;
   text-decoration: none;
   color: white;
-  width: 100vw;
-  left: 0px;
+  width: 6vw;
+  right: 0px;
   top: 0px;
   background-color: black;
   color: white;
-  padding-left: 30px;
+  padding-left: 20px;
+  z-index: 3;
+}
+
+.navigation:hover{
+  color: grey;
+  transition: 1s;
+}
+
+.navigation.showme{
+
 }
 
 .back{
-
+width: 10px;
+height: 20px;
+background-color: red;
+right: 0px;
 }
 
 .tag{
@@ -43,38 +111,50 @@ a{
 
 .header {
   position: fixed;
-  top: 60px;
-  left: 1vw;
+  top: -3px;
+  right: -9vw;
   background-color: skyblue;
-  padding: 10px;
+  padding: 5px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.header.showme {
+  transition: 2s;
+  position: fixed;
+  top: -3px;
+  right: 7vw;
+  background-color: skyblue;
+  padding: 5px;
   z-index: 2;
   cursor: pointer;
 }
 
 
 .menu {
-  height: 53vh;
-  width: 15vw;
+  height: 69vh;
+  width: 14.25vw;
   background-color: skyblue;
   position: fixed;
-  left: -20vw;
-  top: 130px;
+  right: -15vw;
+  padding: 5px;
+  top: 67px;
   z-index: 1;
   transition: all 2s;
   text-align: center;
 }
 
 .menu.showme {
-  left: 1vw;
+  right: 7vw;
   transition: all 2s;
 }
 
 
 .example1{
   max-height: 650px;
-max-width: 450px;
-width: 420px;
-height: 593px;
+  max-width: 450px;
+  width: 420px;
+  height: 593px;
   position: absolute;
   margin-left: 425px;
   top: 8px;
@@ -82,17 +162,17 @@ height: 593px;
 
 .example2{
 
-width: 625px;
-height: 375px;
+  width: 625px;
+  height: 375px;
   position: absolute;
   margin-left: 640px;
-  top: 8px;
+  top: 200px;
 }
 
 .example3{
 
-width: 375px;
-height: 375px;
+  width: 375px;
+  height: 375px;
   position: absolute;
   margin-left: 540px;
   top: 8px;
@@ -100,9 +180,18 @@ height: 375px;
 
 .example4{
 
-width: 450px;
-height: 575px;
+  width: 450px;
+  height: 575px;
   position: fixed;
+  margin-left: 460px;
+}
+
+.example5{
+
+  width: 450px;
+  height: 555px;
+  position: fixed;
+  top: 20px;
   margin-left: 460px;
 }
 
@@ -131,11 +220,6 @@ h1{
   font-weight: bold;
 }
 
-h3{
-  font-size: 90px;
-  font-family: 'Ultra', serif;
-  transform: scaleY(500px);
-}
 
 h4 {
   right: 0px;
@@ -221,6 +305,7 @@ letter-spacing: -2px;
 
 .years{
   width: 625px;
+  top: 200px;
   position: fixed;
   font-size: 140px;
   text-align: center;
@@ -235,6 +320,7 @@ letter-spacing: -2px;
   position: fixed;
   width: 625px;
   height: 375px;
+  top: 200px;
   background-color: black;
 }
 
@@ -310,22 +396,103 @@ margin-top: 257px;
   height: 375px;
 }
 
-.halftone{
-  transition: all 1s;
+.box4{
   display: inline-block;
   position: fixed;
-  background-color: grey;
-  width: 450px;
-  height: 558px;
-  margin-top: 8px;
+  background-color: black;
+  width: 420px;
+  height: 552px;
+  margin-top: 12px;
 }
 
-.flash{
-  font-size: 90px;
-  font-family: 'Ultra', serif;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
+.info{
+  font-family: sans-serif;
+  font-size: 6px;
+  color: white;
+  display: inline-block;
+  position: fixed;
+  margin-top: 23px;
+  left: 40px;
+  width: 50px;
+  height: 50px;
+  text-align: left;
+}
+.apostraphy{
+  font-family: sans-serif;
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  position: fixed;
+  top: 35px;
+  left: 320px;
+  width: 30px;
+  height: 50px;
+  text-align: left;
+}
+
+
+.content{
+  font-family: sans-serif;
+  letter-spacing: 90px;
+  position: relative;
+  top: -55px;
+  margin-left: 0px;
+  line-height: 112px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  text-align: justify;
+  padding: 30px;
+}
+
+.box5{
+  display: inline-block;
+  position: fixed;
+  background-color: #fff;
+  border: 2.5px solid #f5f5f5;
+  width: 420px;
+  height: 552px;
+  top: 20px;
+}
+
+.blackbox{
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  top: 424px;
+  left: 28px;
+  background-color: black;
+  position: fixed;
+}
+
+.smallbox{
+  display: inline-block;
+  position: fixed;
+  width: 378px;
+  left: 28px;
+  height: 394px;
+  top: 40px;
+  background-color: #e90101;
+  z-index: 10;
+}
+.fiat{
+  font-family: sans-serif;
+  font-weight: bold;
+  letter-spacing: -3px;
+  font-size: 42px;
+  top: 500px;
+  position: fixed;
+}
+.fiatinfo{
+  font-family: sans-serif;
+  font-size: 7px;
+  left: 115px;
+  top: 415px;
+  line-height: 8.9px;
+  letter-spacing: .001px;
+  width: 300px;
+  position: absolute;
 }

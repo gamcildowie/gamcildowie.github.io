@@ -1,7 +1,17 @@
 $(document).ready(function() {
 
+  $('.header').hover(function() {
+    $('.menu').addClass('showme');
+  });
   $('.header').click(function() {
-    $('.menu').toggleClass('showme');
+    $('.menu').removeClass('showme');
+  });
+
+  $('.navigation').hover(function() {
+    $('.header').addClass('showme');
+  });
+  $('.navigation').click(function() {
+    $('.header').removeClass('showme');
   });
 
 

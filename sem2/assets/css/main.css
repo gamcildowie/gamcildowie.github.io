@@ -18,6 +18,7 @@ a{
   height: 100vh;
   background-color: #a9261e;
   z-index: 0;
+  background-blend-mode: hue;
 }
 
 .head{
@@ -97,9 +98,9 @@ right: 0px;
 }
 
 .tag{
-  text-decoration: underline;
-  color: black;
-  text-shadow: 2px 1px grey;
+  max-width: 50px;
+  width: 10px;
+  height: 5px;
 
 }
 .tag:hover{
@@ -109,45 +110,38 @@ right: 0px;
 
 }
 
-.header {
-  position: fixed;
-  top: -3px;
-  right: -9vw;
-  background-color: skyblue;
-  padding: 5px;
-  z-index: 2;
-  cursor: pointer;
-}
-
-.header.showme {
-  transition: 2s;
-  position: fixed;
-  top: -3px;
-  right: 7vw;
-  background-color: skyblue;
-  padding: 5px;
-  z-index: 2;
-  cursor: pointer;
-}
-
 
 .menu {
-  height: 69vh;
-  width: 14.25vw;
-  background-color: skyblue;
+  height: 100vh;
+  width: 10vw;
   position: fixed;
   right: -15vw;
   padding: 5px;
-  top: 67px;
+  top: 0px;
   z-index: 1;
   transition: all 2s;
-  text-align: center;
+  overflow-y: scroll;
 }
 
 .menu.showme {
-  right: 7vw;
+  right: 0vw;
   transition: all 2s;
+  width: 20vw;
 }
+
+.caption{
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  color: black;
+  width: 220px;
+  text-align: right;
+  right: 10px;
+  top: 80px;
+  position: fixed;
+
+}
+
 
 
 .example1{
@@ -348,32 +342,32 @@ p{
 .high{
   position: fixed;
   margin-top: -10px;
-  margin-left: 15px;
+  margin-left: 35px;
   font-family: sans-serif;
-  color: #f3040a;
+  color: #fff;
 
 }
 
 .low9{
   transition: 1s;
-  transform-origin: bottom;
+  transform-origin: middle;
   transform: rotate(-180deg);
-  top: -488px;
-  margin-left: 15px;
+  top: -108px;
+  margin-left: 38px;
   position: fixed;
   font-family: sans-serif;
-  color: #fff;
+  color: transparent;
 }
 
 .low8{
   transition: 1s;
-  transform-origin: top;
+  transform-origin: middle;
   transform: rotate(-180deg);
-  top: 125px;
-  margin-left: 164px;
+  top: -106px;
+  margin-left: 182px;
   position: fixed;
   font-family: sans-serif;
-  color: #f3040a;
+  color: transparent;
 }
 
 .addwhite{
@@ -381,10 +375,10 @@ p{
 }
 
 .spin{
-transform: rotate(180deg);
+transform: rotate(360deg);
 transition: 2s;
 color: white;
-margin-top: 257px;
+margin-top: 180px;
 }
 
 .redsquare{
@@ -399,16 +393,43 @@ margin-top: 257px;
 .box4{
   display: inline-block;
   position: fixed;
-  background-color: black;
+  background-color: white;
   width: 420px;
   height: 552px;
   margin-top: 12px;
+  cursor: pointer;
+
 }
+
+.box4.showme{
+  transition: 6s;
+  background-color: black;
+  animation-timing-function: ease-in-out;
+}
+
+.content.showme, .apostraphy.showme{
+  color: white;
+  transition: 2s;
+  letter-spacing: 90px;
+  animation-timing-function: ease-in-out;
+
+}
+
+.info.showme{
+  color: white;
+  transition: 2s;
+  letter-spacing: 1px;
+  animation-timing-function: ease-in-out;
+
+}
+
+
+
 
 .info{
   font-family: sans-serif;
   font-size: 6px;
-  color: white;
+  color: black;
   display: inline-block;
   position: fixed;
   margin-top: 23px;
@@ -416,6 +437,9 @@ margin-top: 257px;
   width: 50px;
   height: 50px;
   text-align: left;
+  cursor: pointer;
+  letter-spacing: 8px;
+
 }
 .apostraphy{
   font-family: sans-serif;
@@ -428,24 +452,27 @@ margin-top: 257px;
   width: 30px;
   height: 50px;
   text-align: left;
+  cursor: pointer;
+
 }
 
 
 .content{
   font-family: sans-serif;
-  letter-spacing: 90px;
+  letter-spacing: 10px;
   position: relative;
   top: -55px;
   margin-left: 0px;
   line-height: 112px;
   font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: black;
   display: inline-block;
   width: 50%;
   height: 50px;
   text-align: justify;
   padding: 30px;
+  cursor: pointer;
 }
 
 .box5{
@@ -466,6 +493,18 @@ margin-top: 257px;
   left: 28px;
   background-color: black;
   position: fixed;
+  cursor: pointer;
+  transform-origin: top;
+  transition: 20s;
+}
+
+
+.blackbox.showme{
+  width: 300px;
+  height: 300px;
+  transition: 11s;
+  top: 134px;
+
 }
 
 .smallbox{
@@ -478,6 +517,12 @@ margin-top: 257px;
   background-color: #e90101;
   z-index: 10;
 }
+
+.bold{
+font-weight: bold;
+letter-spacing: 0.3px;
+}
+
 .fiat{
   font-family: sans-serif;
   font-weight: bold;
@@ -485,6 +530,7 @@ margin-top: 257px;
   font-size: 42px;
   top: 500px;
   position: fixed;
+  cursor: pointer;
 }
 .fiatinfo{
   font-family: sans-serif;

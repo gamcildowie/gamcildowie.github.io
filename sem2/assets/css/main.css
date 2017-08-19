@@ -63,12 +63,17 @@ h2{
   background-color: #6d97c9;
 }
 
+
+
+
 .project1{
   background-color: #111111;
   width: 300px;
   height: 300PX;
   position: fixed;
   transition: 3s;
+  background-blend-mode: lighten;
+  background-image: url();
 }
 
 .project1:hover{

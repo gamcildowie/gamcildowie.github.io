@@ -18,7 +18,20 @@ a{
   height: 100vh;
   background-color: #a9261e;
   z-index: 0;
-  background-blend-mode: hue;
+}
+
+.projecttitle{
+font-size: 9px;
+line-height: 1.5;
+position: fixed;
+display: inline-block;
+right: 10px;
+top: 80px;
+text-align: right;
+width: 135px;
+color: white;
+z-index: 44;
+opacity: 0.3;
 }
 
 .head{
@@ -240,6 +253,7 @@ right: 0px;
 h2{
   font-family: sans-serif;
 }
+
 
 h5{
   font-family: sans-serif;

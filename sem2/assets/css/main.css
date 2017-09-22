@@ -81,6 +81,22 @@ h2{
   transition: 3s;
 }
 
+
+.project2{
+  background-color: #111111;
+  width: 300px;
+  height: 300PX;
+  position: fixed;
+  transition: 3s;
+  background-blend-mode: lighten;
+  background-image: url();
+}
+
+.project2:hover{
+  background-color: #a9261e;
+  transition: 3s;
+}
+
 img{
   margin-top: 50px;
 padding: 30px;

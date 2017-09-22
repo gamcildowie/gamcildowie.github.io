@@ -23,15 +23,15 @@ opacity: 1;
 .mation{
   top: 100px;
   right: 28px;
-  width: 160px;
-  height: 440px;
+  width: 170px;
+  height: 430px;
   font-family: arial;
   color: black;
   font-size: 12px;
   position: fixed;
   display: none;
   z-index: 100;
-  background-color: rgba(250, 250, 250, 1);
+  background-color: white;
   border-radius: 30px 0px 30px 30px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -44,7 +44,9 @@ opacity: 1;
 }
 
 .spiral{
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 20px 20px 20px 20px;
 }
 
 

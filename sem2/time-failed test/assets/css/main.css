@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+
+}
+
+.time{
+  font-size: 20px;
+  width: 100vw;
+  text-align: center;
+  bottom: 0px;
+  position: absolute;
+  text-transform: uppercase;
+  font-family: arial;
+  padding: 10px;
+}
+
+.message_swap{
+  width: 100vw;
+  text-align: right;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 20px;
+  position: fixed;
+  bottom: 10px;
+}
+
+
+.image_add{
+  width: 100vw;
+  top: 10px;
+}
+
+.frame1{
+  display: inline-block;
+}

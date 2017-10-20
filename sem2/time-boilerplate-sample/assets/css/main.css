@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+.time{
+  font-size: 80px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: arial;
+  margin-bottom: 10px;
+}
+
+
+.image_swap{
+  margin: auto;
+  width: 600px;
+}
+
+.image_swap img{
+  max-width: 100%;
+}
+
+.message_swap{
+  margin: auto;
+  width: 600px;
+  font-family: courier;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+
+
+img{
+  opacity: .80;
+  
+}
+
+.andrew{
+  font-size: 100px;
+  text-align: center;
+  font-family: Comic Sans MS;
+  color: white;
+  display: none;
+  position: fixed;
+  top: 250px;
+}

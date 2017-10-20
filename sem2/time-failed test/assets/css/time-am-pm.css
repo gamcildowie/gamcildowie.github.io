@@ -1,0 +1,18 @@
+
+
+ body.am .message_swap .morning, .time.am{
+  display: block;
+}
+
+ body.pm .message_swap .morning, .time.pm{
+  display: none;
+}
+
+
+ body.am .message_swap .evening, .time.am{
+  display: none;
+}
+
+ body.pm .message_swap .evening, .time.pm {
+  display: block;
+}

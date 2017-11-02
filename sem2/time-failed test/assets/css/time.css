@@ -21,10 +21,7 @@ body.evenS.pm .sunset {
 
 /* Time CSS here */
 
-.time.am{
-  background-color: red;
-}
+body.am{
 
-.time.pm{
-  background-color: yellow;
+
 }

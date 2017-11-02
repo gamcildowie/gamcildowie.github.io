@@ -1,0 +1,153 @@
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* Start here */
+
+  body {
+  width: 100vw;
+  background: black;
+
+  }
+
+
+  .item{
+
+  }
+
+
+  .ig{
+    font-family:'VT323', monospace;
+    position: absolute;
+    font-size: 18px;
+    transform: rotate(90deg);
+    z-index: 98;
+    color: white;
+    top: 70px;
+    right: 38px;
+  }
+
+
+    .dj{
+      font-family:'VT323', monospace;
+      position: absolute;
+      font-size: 18px;
+      transform: rotate(90deg);
+      z-index: 98;
+      color: white;
+      top: 3860px;
+      right: 50px;
+
+    }
+
+
+
+  .time{
+    display: inline-block;
+    position: fixed;
+    font-family:'VT323', monospace;
+    width: 100vw;
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-align: right;
+    right: 40px;
+    bottom: 20px;
+    color: #ffff;
+    z-index: 3;
+  }
+
+
+  .nav ul{
+  position: fixed;
+  width: 100px;
+  right: 0px;
+  top: 20px;
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  list-style-type: none;
+  margin: 5px;
+  }
+
+  .nav a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  .nav a:hover{
+    text-decoration: underline;
+    color: grey;
+  }
+
+  .nav a:active{
+    text-decoration: underline;
+    color: black;
+  }
+
+  .active a{
+    color: #921714;
+    text-decoration: underline;
+
+  }
+
+
+  .container{
+    display: flex;
+    position: relative;
+    flex-wrap:wrap;
+    align-items: flex-end;
+    width: 90vw;
+    right: 0px;
+    top: -5px;
+    z-index: 0;
+    background-color: #000000;
+  }
+
+  .container2{
+    display: flex;
+    position: relative;
+    flex-wrap:wrap;
+    align-items: flex-end;
+    width: 90vw;
+    right: 0px;
+    z-index: 0;
+    margin-top: 4px;
+    background-color: #000000;
+
+  }
+
+  .frame{
+    border: 10px solid transparent;
+    margin-top: 7.5px;
+    margin-bottom: 7.5px;
+
+  }
+
+  .r1, .r2, .r3, .r4, .r5, .r6{
+  }
+
+  .item {
+
+  }
+    .item img {
+      max-width: 100%;
+    }
+
+    .col1of5 {
+      flex: 0 0 33%;
+    }
+
+    .col2of5 {
+      flex:0 0 40%;
+    }
+
+    .col3of5 {
+      flex:0 0 60%;
+    }
+
+    .col4of5 {
+      flex:0 0 80%;
+    }

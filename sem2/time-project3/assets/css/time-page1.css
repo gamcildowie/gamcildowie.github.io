@@ -23,23 +23,49 @@ body.evenS.pm .sunset {
 
 
 .r1, .r2, .r3, .r4, .r5, .r6 {
-display: none;}
+  z-index: 10;
+
+}
 
 body.s1 .f1, body.s2 .f2,  body.s3 .f3,  body.s4 .f4,  body.s5 .f5,  body.s6 .f6,  body.s7 .f7,  body.s8 .f8,  body.s9 .f9,  body.s10 .f10 {
-display: flex;
+border-top: 10px solid #000000;
+border-bottom: 10px solid #000000;
+border: 5px solid #921714;
+z-index: 0;
+
 }
 body.s11 .f11, body.s12 .f12,  body.s13 .f13,  body.s14 .f14,  body.s15 .f15,  body.s16 .f16,  body.s17 .f17,  body.s18 .f18,  body.s19 .f19,  body.s20 .f20 {
-  display: flex;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  border: 5px solid #921714;
+  z-index: 0;
+
 }
 body.s21 .f21, body.s22 .f22,  body.s23 .f23,  body.s24 .f24,  body.s25 .f25,  body.s26 .f26,  body.s27 .f27,  body.s28 .f28,  body.s29 .f29,  body.s30 .f30 {
-  display: flex;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  border: 5px solid #921714;
+  z-index: 0;
+
 }
 body.s31 .f31, body.s32 .f32,  body.s33 .f33,  body.s34 .f34,  body.s35 .f35,  body.s36 .f36,  body.s37 .f37,  body.s38 .f38,  body.s39 .f39,  body.s40 .f40 {
-  display: flex;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  border: 5px solid #921714;
+  z-index: 0;
+
 }
 body.s41 .f41, body.s42 .f42,  body.s43 .f43,  body.s44 .f44,  body.s45 .f45,  body.s46 .f46,  body.s47 .f47,  body.s48 .f48,  body.s49 .f49,  body.s50 .f50 {
-  display: flex;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  border: 5px solid #921714;
+  z-index: 0;
+
 }
 body.s51 .f51, body.s52 .f52,  body.s53 .f53,  body.s54 .f54,  body.s55 .f55,  body.s56 .f56,  body.s57 .f57,  body.s58 .f58,  body.s59 .f59,  body.s60 .f60 {
-  display: flex;
+  border-top: 10px solid #000000;
+  border-bottom: 10px solid #000000;
+  border: 5px solid #921714;
+  z-index: 0;
+
 }

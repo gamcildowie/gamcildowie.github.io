@@ -23,7 +23,8 @@ body.evenS.pm .sunset {
 
 
 .r1, .r2, .r3, .r4, .r5, .r6 {
-display: none;}
+display: none;
+}
 
 body.s1 .f1, body.s2 .f2,  body.s3 .f3,  body.s4 .f4,  body.s5 .f5,  body.s6 .f6,  body.s7 .f7,  body.s8 .f8,  body.s9 .f9,  body.s10 .f10 {
 display: flex;
